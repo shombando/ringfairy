@@ -59,7 +59,12 @@ Command-line arguments take precedence over any settings in the config file.
 - *`-o`, `--output`*: Define the output folder, where the generated files will be saved. Default: `./webring`
 - *`-a`, `--assets`*: Specify the assets folder. Any files in here will be copied to the output folder. This lets you include any extra files you want, such as images or extra web pages, etc. Default: `./data/assets`
 - *`-t`, `--templates`*: Specify path to the template folder. Use `template.html` for redirect pages (i.e. the HTML which composes the webring). Any extra pages can be added here if you want them to be populated with generated content. Default: `./data/templates`
-- *`--skip-minification`*: Outputs pages without optimizing or modifying them. Try this if you want your generated files to be hand-editable later, or if you experience any unexpected issues with the output. 
+- *`-u`, `--url`*: The base URL for the webring. Something like 'https://example.com'. 
+- *`-n`, `--name`*: The name of the webring. Something like 'Ghostring'.
+- *`-d`, `--description`*: A short description/about the webring.
+- *`-m`, `--maintainer`*: The owner/maintainer of the webring, could be a person or an organization.
+- *`-w`, `--website`*: The website link of the website owner, not the base URL of the webring.
+- *`--skip-minification`*: Outputs pages without optimizing or modifying them. Try this if you want your generated files to be hand-editable later, or if you experience any unexpected issues with the output.
 - *`--skip-verification`*: Generates files without checking for potential problems...unwise!
 - *`--dry-run`*: Runs the application without outputting any files
 - *`-s`, `--shuffle`*: Randomly shuffles the order of websites during generation. This is totally internal and does not affect the input list of websites; you can shuffle the same webring repeatedly without losing the original sequence. 
