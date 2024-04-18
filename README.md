@@ -23,6 +23,7 @@ This is a tool for anyone who has some kind of personal website or blog and wish
 - Highly optimized
 - Auto-detect webring links on sites 
 - Fully customizable via templates
+- Generates a [OPML](https://opml.org/) file with all sites that have a RSS feed
 - Choice of command-line interface or config file
 - Remote config file support too
 - Shuffle option
@@ -94,6 +95,7 @@ The following tags are currently usable in templates:
 - *`{{ table_of_sites }}`* produces a formatted HTML table listing information for all sites in the webring. 
 - *`{{ number_of_sites }}`* shows the current size of the webring.
 - *`{{ current_time }}`* displays the time of generating, showing when the page was last updated. 
+- *`{{ opml }}`* inserts the relative path of the ring's OPML file.
 
 Right now, `{{ url }}` is a special tag that only works in `template.html` for the next/previous links.  
 
